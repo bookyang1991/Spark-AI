@@ -1,0 +1,15 @@
+   {
+     "version": 2,
+     "builds": [
+       {
+         "src": "comfyui-api-demo/app.py",
+         "use": "@vercel/python"
+       }
+     ],
+     "routes": [
+       {
+         "src": "/(.*)",
+         "dest": "comfyui-api-demo/app.py"
+       }
+     ]
+   }
